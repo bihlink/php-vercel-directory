@@ -9,4 +9,4 @@
     <link rel="icon" href="<?= $rooturl; ?>/img/icon.png" sizes="32x32" />
     <link rel="icon" href="<?= $rooturl; ?>/img/icon.png" sizes="192x192" />
     <link rel="apple-touch-icon" href="<?= $rooturl; ?>/img/icon.png" />
-    <script src="<?= $rooturl; ?>/inc/lightswitch.js"/></script>
+    <script src="/inc/lightswitch.js"/></script>
