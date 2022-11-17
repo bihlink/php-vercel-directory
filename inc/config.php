@@ -1,4 +1,5 @@
 <?php
-$siteurl = "https://fedir.vercel.app";
-$sitetitle = "Fediverse Directory";
+$rooturl = "https://fedir.vercel.app";
+$seotitle = "Fediverse Directory";
+$seodesc = "Directory of Fediverse profiles and instances";
 ?>
