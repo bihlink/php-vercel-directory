@@ -1,5 +1,6 @@
 <?php
-echo "Hello from index file";
+require_once('inc/config.php'); 
+echo "Welcome to $sitetitle";
 ?>
 <br>
 <a href="server/phpinfo.php">View phpinfo</a><br>
