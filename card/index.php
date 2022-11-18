@@ -32,10 +32,7 @@ $card = array_search($view, array_column( $json, 'cid' ) );
             if ($json[$card]["type"] == "misskey") {
                 echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=https://".$json[$card]["instanceurl"]."/@".$json[$card]["username"]."&theme=modern-light-min&size=100&header=true&replies==".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
             } else {
-                ?>
-                <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="100%" height="800" src="https://maplefeed.bihlink.com/apiv2/feed?userurl=https://<?php echo $json[$card]["instanceurl"]; ?>/users/<?php echo $json[$card]["username"]; ?>&theme=modern-light&size=100&header=true&replies=<?php echo $json[$card]["replies"]; ?>&boosts=<?php echo $json[$card]["boosts"]; ?>"></iframe>
-                <?php
-                //echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=https://".$json[$card]["instanceurl"]."/users/".$json[$card]["username"]."&theme=modern-light-min&size=100&header=true&replies=".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
+                echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=https://".$json[$card]["instanceurl"]."/users/".$json[$card]["username"]."&theme=modern-light-min&size=100&header=true&replies=".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
             }
         }
         ?>
