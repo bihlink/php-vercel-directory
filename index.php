@@ -79,7 +79,7 @@ require_once('inc/config.php');
                               <img src="<?= $cardimg; ?>" style="width:100%;max-height:150px;" class="card-img-top">
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
-                                <h6 class="box-post-title"  style="margin-left:84px;"><?= $name; ?></h6>
+                                <h5 class="box-post-title m-2"  style="margin-left:84px;"><?= $name; ?></h5>
                                 <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">@<?= $username; ?>@<?= $instanceurl; ?></a></p>
                               </div>
                             </div>
