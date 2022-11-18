@@ -27,6 +27,23 @@ require_once('inc/config.php');
 	<meta name="twitter:title" content="<?= $seotitle; ?>">
 	<meta name="twitter:description" content="<?= $seodesc; ?>">
 	<meta name="twitter:image" content="<?= $rooturl; ?>/img/bihlink.jpg">
+	<style>
+	.avatar {
+	  width: 80px;
+	  background-color: #dc3545;
+	}
+	.rounded-circle {
+	  border-radius: 50% !important;
+	}
+	.shadow {
+	  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+	}
+	.header-left {
+	  position: absolute;
+	  top: 100px;
+	  left: 12px;
+	}
+	</style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle"></i></button>
