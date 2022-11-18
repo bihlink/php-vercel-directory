@@ -66,8 +66,6 @@ require_once('inc/config.php');
                                 </a>
                                 <p class="card-text"><a href="<?= $instanceurl; ?>/@<?= $username; ?>" target="_blank">@<?= $username; ?></a> / <a href="https://fedicard.bihlink.com/admin/viewcard.php?view=<?= $cid; ?>" target="_blank">View Card</a></p>
                                 <p class="card-text"><?= $description; ?></p>
-                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteCatModal<?= $cid; ?>">Delete</button>
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editCatModal<?= $cid; ?>">Edit</button>
                               </div>
                             </div>
                           </div>
