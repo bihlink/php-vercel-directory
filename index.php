@@ -80,7 +80,7 @@ require_once('inc/config.php');
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
                                 <a href="https://<?= $instanceurl; ?>/@<?= $username; ?>" target="_blank">
-                                    <h6 class="box-post-title"><?= $name; ?></h6>
+                                    <h6 class="box-post-title"  style="margin-left:100px;"><?= $name; ?></h6>
                                 </a>
                                 <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">@<?= $username; ?>@<?= $instanceurl; ?></a></p>
                               </div>
