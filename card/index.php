@@ -41,7 +41,7 @@ $card = array_search($view, array_column( $json, 'cid' ) );
       <!-- Copyright -->
       <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.2);">
         Created By
-        <a class="text-dark" href="https://fedir.vercel.app/">Fediverse Directory</a> & Powered By <a class="text-dark" href="https://maplefeed.bihlink.com.com/">MaPleFeed</a>
+        <a class="text-dark" href="https://fedir.vercel.app/">Fediverse Directory</a> & Powered By <a class="text-dark" href="https://maplefeed.bihlink.com/">MaPleFeed</a> Admin: <a class="text-dark" href="https://abid.cc/abid">abid@abid.cc</a>
       </div>
       <!-- Copyright -->
     </footer>
