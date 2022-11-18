@@ -80,7 +80,14 @@ require_once('inc/config.php');
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
                                 <h6 class="box-post-title"  style="margin-left:84px;margin-top:-8px;"><?= $name; ?></h6>
-                                <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">@<?= $username; ?>@<?= $instanceurl; ?></a></p>
+				<?php
+					if ($json[$card]["type"] == "misskey") {
+						echo '<p class="card-text"><a href="https://".$instanceurl."/@".$username."" target="_blank">".$username."@".$instanceurl."</a></p>';
+					    } else {
+						echo '<p class="card-text"><a href="https://".$instanceurl."/users/".$username."" target="_blank">".$username."@".$instanceurl."</a></p>';
+					    }
+				?>
+                                <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">@<?= $username; ?> Fedi Card</a></p>
                               </div>
                             </div>
                           </div>
