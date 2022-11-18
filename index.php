@@ -64,7 +64,7 @@ require_once('inc/config.php');
                                 <a href="<?= $instanceurl; ?>/@<?= $username; ?>" target="_blank">
                                     <h6 class="box-post-title"><?= $name; ?></h6>
                                 </a>
-                                <p class="card-text"><a href="<?= $instanceurl; ?>/@<?= $username; ?>" target="_blank">@<?= $username; ?></a> / <a href="https://fedicard.bihlink.com/card/?view=<?= $cid; ?>" target="_blank">View Card</a></p>
+                                <p class="card-text"><a href="<?= $instanceurl; ?>/@<?= $username; ?>" target="_blank">@<?= $username; ?></a> / <a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">View Card</a></p>
                                 <p class="card-text"><?= $description; ?></p>
                               </div>
                             </div>
