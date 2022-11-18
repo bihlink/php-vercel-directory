@@ -81,7 +81,7 @@ require_once('inc/config.php');
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
                                 <h6 class="box-post-title"  style="margin-left:84px;margin-top:-8px;"><?= $name; ?></h6>
 				<?php
-					if ($json[$card]["type"] == "misskey") {
+					if ($type == "misskey") {
 						echo '<p class="card-text"><a href="https://".$instanceurl."/@".$username."" target="_blank">".$username."@".$instanceurl."</a></p>';
 					    } else {
 						echo '<p class="card-text"><a href="https://".$instanceurl."/users/".$username."" target="_blank">".$username."@".$instanceurl."</a></p>';
