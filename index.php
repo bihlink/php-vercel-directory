@@ -81,7 +81,7 @@ require_once('inc/config.php');
 				<a href="<?= $instanceurl; ?>" target="_blank">
                                 <h6 class="box-post-title"  style="margin-left:84px;margin-top:-8px;">@<?= $username; ?></h6>
 				</a>
-				      <p class="card-text"><b><?= $name; ?></b><br><?= $instanceurl; ?><br><?= $description; ?></p>
+				      <p class="card-text"><b><?= $name; ?></b><br><small><?= $instanceurl; ?></small><br><br><?= $description; ?></p>
 				<a class="btn btn-primary btn-sm w-100" href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank" role="button">View Fedi Card</a>
                               </div>
                             </div>
