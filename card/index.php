@@ -30,9 +30,9 @@ $card = array_search($view, array_column( $json, 'cid' ) );
             echo '<div class="alert alert-danger mb-3" role="alert">This Fedi Card is not approved for public view!</div>';
         } else {
             if ($json[$card]["type"] == "misskey") {
-                echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=https://".$json[$card]["instanceurl"]."/@".$json[$card]["username"]."&theme=modern-light-min&size=100&header=true&replies==".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
+                echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=".$json[$card]["instanceurl"]."&theme=modern-light-min&size=100&header=true&replies==".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
             } else {
-                echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=https://".$json[$card]["instanceurl"]."/users/".$json[$card]["username"]."&theme=modern-light-min&size=100&header=true&replies=".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
+                echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=".$json[$card]["instanceurl"]."&theme=modern-light-min&size=100&header=true&replies=".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
             }
         }
         ?>
