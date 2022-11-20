@@ -73,8 +73,8 @@ require_once('inc/config.php');
                         $featured = $data["featured"];
                         $cid = $data["cid"];
                         ?>
-                          <div class="col shadow">
-                            <div class="card h-100 position-relative">
+                          <div class="col">
+                            <div class="card h-100 position-relative shadow">
                               <img src="<?= $cardimg; ?>" style="width:100%;max-height:150px;" class="card-img-top">
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
