@@ -52,7 +52,7 @@ require_once('inc/config.php');
 
                 <div class="row" data-masonry="{"percentPosition": true }">
                     <div class="col-12"><h2><i class="bi bi-play-btn"></i> <?= $seotitle; ?></h2></div>
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                    <div class="row data-masonry="{"percentPosition": true }" row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
                         <?php
                         $apidata = "https://fedicard.bihlink.com/data/cardsdata.json";
                         $api = file_get_contents($apidata);
