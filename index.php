@@ -64,7 +64,6 @@ require_once('inc/config.php');
                         $avatar = $data['avatar'];
                         $cardimg = $data['cardimg'];
                         $description = $data["description"];
-                        $description = $data["description"];
                         $type = $data["type"];
                         $instanceurl = $data["instanceurl"];
                         $replies = $data["replies"];
@@ -79,19 +78,11 @@ require_once('inc/config.php');
                               <img src="<?= $cardimg; ?>" style="width:100%;max-height:150px;" class="card-img-top">
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
-                                <h6 class="box-post-title"  style="margin-left:84px;margin-top:-8px;"><?= $name; ?></h6>
-				<?php
-					if ($type == "misskey") {
-						?>
-						<p class="card-text"><a href="<?= $instanceurl; ?>" target="_blank">@<?= $username; ?></a></p>
-				      		<?php
-					    } else {
-						?>
-						<p class="card-text"><a href="<?= $instanceurl; ?>" target="_blank">@<?= $username; ?></a></p>
-				      		<?php
-					    }
-				?>
-                                <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">View Fedi Card</a></p>
+				<a href="<?= $instanceurl; ?>" target="_blank">
+                                <h6 class="box-post-title"  style="margin-left:84px;margin-top:-8px;">@<?= $username; ?></h6>
+				</a>
+				      <p class="card-text"><b><?= $name; ?></b><br><?= $instanceurl; ?><br><?= $description; ?></p>
+				<a class="btn btn-primary btn-sm w-100" href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank" role="button">View Fedi Card</a>
                               </div>
                             </div>
                           </div>
