@@ -83,15 +83,15 @@ require_once('inc/config.php');
 				<?php
 					if ($type == "misskey") {
 						?>
-						<p class="card-text"><a href="https://<?= $instanceurl; ?>/@<?= $username; ?>" target="_blank"><?= $username; ?>@<?= $instanceurl; ?></a></p>
+						<p class="card-text"><a href="<?= $instanceurl; ?>" target="_blank">@<?= $username; ?></a></p>
 				      		<?php
 					    } else {
 						?>
-						<p class="card-text"><a href="https://<?= $instanceurl; ?>/users/<?= $username; ?>" target="_blank"><?= $username; ?>@<?= $instanceurl; ?></a></p>
+						<p class="card-text"><a href="<?= $instanceurl; ?>" target="_blank">@<?= $username; ?></a></p>
 				      		<?php
 					    }
 				?>
-                                <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">@<?= $username; ?> Fedi Card</a></p>
+                                <p class="card-text"><a href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank">View Fedi Card</a></p>
                               </div>
                             </div>
                           </div>
