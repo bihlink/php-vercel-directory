@@ -50,7 +50,7 @@ require_once('inc/config.php');
 <?php include('inc/navbar.php'); ?>
     <div class="container">
 
-                <div class="row">
+                <div class="row" data-masonry="{"percentPosition": true }">
                     <div class="col-12"><h2><i class="bi bi-play-btn"></i> <?= $seotitle; ?></h2></div>
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
                         <?php
