@@ -74,15 +74,15 @@ require_once('inc/config.php');
                         $cid = $data["cid"];
                         ?>
                           <div class="col">
-                            <div class="card h-100 position-relative">
+                            <div class="card position-relative">
                               <img src="<?= $cardimg; ?>" style="width:100%;max-height:150px;" class="card-img-top">
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
 				<a href="<?= $instanceurl; ?>" target="_blank">
                                 <h6 class="box-post-title"  style="margin-left:84px;margin-top:-8px;">@<?= $username; ?></h6>
 				</a>
-				      <p class="card-text"><b><?= $name; ?></b><br><i><small><?= $instanceurl; ?></small></i><br><?= $description; ?></p>
-				<a class="btn btn-primary btn-sm w-100" href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank" role="button">View Fedi Card</a>
+				<p class="card-text"><b><?= $name; ?></b><br><i><small><a href="<?= $instanceurl; ?>" target="_blank"><?= $instanceurl; ?></a></small></i><br><?= $description; ?></p>
+				<a class="btn btn-danger btn-sm w-100" href="<?= $rooturl; ?>/card/?view=<?= $cid; ?>" target="_blank" role="button">View Fedi Card</a>
                               </div>
                             </div>
                           </div>
