@@ -48,7 +48,8 @@ $card = array_search($view, array_column( $json, 'cid' ) );
             if ($json[$card]["type"] == "misskey") {
                 echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=".$json[$card]["instanceurl"]."&theme=modern-light-min&size=100&header=true&replies==".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
             } else {
-                echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=".$json[$card]["instanceurl"]."&theme=modern-light-min&size=100&header=true&replies=".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
+                echo '<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="100%" height="1200" src="https://maplefeed.bihlink.com/apiv2/feed?userurl='.$json[$card]["instanceurl"].'&theme=modern-light&size=100&header=false&replies='.$json[$card]["replies"].'&boosts='.$json[$card]["boosts"].'"></iframe>';
+                //echo file_get_contents("https://maplefeed.bihlink.com/apiv2/feed?userurl=".$json[$card]["instanceurl"]."&theme=modern-light-min&size=100&header=true&replies=".$json[$card]["replies"]."&boosts=".$json[$card]["boosts"]."");
             }
         }
         ?>
