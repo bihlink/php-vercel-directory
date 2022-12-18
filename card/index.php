@@ -23,6 +23,20 @@ $card = array_search($view, array_column( $json, 'cid' ) );
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <base target="_blank">
+    <meta itemprop="name" content="<?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?>">
+    <meta itemprop="description" content="<?php echo $json[$card]["description"]; ?>">
+    <meta itemprop="image" content="<?php echo $json[$card]["cardimg"]; ?>">
+    <meta property="og:title" content="<?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?>">
+    <meta property="og:image" content="<?php echo $json[$card]["cardimg"]; ?>">
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+    <meta property="og:site_name" content="FediCards Directory">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@abidnev">
+    <meta name="twitter:creator" content="@abidnev">
+    <meta name="twitter:title" content="<?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?>">
+    <meta name="twitter:image" content="<?php echo $json[$card]["cardimg"]; ?>">
 </head>
 <body>
     <div class="container shadow pt-3 mb-3" style="max-width:800px;">
