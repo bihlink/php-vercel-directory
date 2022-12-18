@@ -50,9 +50,9 @@ $card = array_search($view, array_column( $json, 'cid' ) );
                 <a class="header-left" target="_blank" href="<?php echo $json[$card]["instanceurl"]; ?>">
                     <img class="avatar rounded-circle shadow" src="<?php echo $json[$card]["avatar"]; ?>"></img>
                 </a>
-                <a class="header-left" target="_blank" href="<?php echo $json[$card]["instanceurl"]; ?>">
-                    <h4 class="card-title" style="margin-left:120px;">@<?php echo $json[$card]["username"]; ?></h4>
-                </a>
+                <h4 class="card-title" style="margin-left:120px;">
+                    <a class="header-left" target="_blank" href="<?php echo $json[$card]["instanceurl"]; ?>">@<?php echo $json[$card]["username"]; ?></a>
+                </h4>
             <!-- <p class="card-text"><?php echo $json[$card]["description"]; ?></p> -->
           </div>
         </div>
