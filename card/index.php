@@ -41,7 +41,18 @@ $card = array_search($view, array_column( $json, 'cid' ) );
     <meta name="twitter:image" content="<?php echo $json[$card]["avatar"]; ?>">
 </head>
 <body>
-    <div class="container shadow pt-3 mb-3" style="max-width:800px;">
+    <div class="container shadow pt-3 mb-3 mt-3" style="max-width:800px;">
+        <div class="card position-relative mb-2">
+          <img src="<?php echo $json[$card]["cardimg"]; ?>" class="card-img-top headerimg">
+          <span class="position-absolute top-0 end-0 px-1 bg-danger m-2 follow"><a href="<?php echo $json[$card]["instanceurl"]; ?>" target="_top">Follow</a></span>
+          <div class="card-body">
+                <a class="header-left" target="_top" href="<?php echo $json[$card]["instanceurl"]; ?>">
+                    <img class="avatar rounded-circle shadow" src="<?php echo $json[$card]["avatar"]; ?>"></img>
+                </a>
+            <h4 class="card-title" style="margin-left:120px;">@<?php echo $json[$card]["username"]; ?></h4>
+            <p class="card-text"><?php echo $json[$card]["description"]; ?></p>
+          </div>
+        </div>
         <?php if ($json[$card]["approved"] == "false") {
             echo '<div class="alert alert-danger mb-3" role="alert">This Fedi Card is not approved for public view!</div>';
         } else {
