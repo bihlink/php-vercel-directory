@@ -16,7 +16,7 @@ $card = array_search($view, array_column( $json, 'cid' ) );
 <head>
     <title><?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?></title>
     <meta name="description" content="<?php echo $json[$card]["description"]; ?>" />
-    <meta name="image" content="<?php echo $json[$card]["cardimg"]; ?>">
+    <meta name="image" content="<?php echo $json[$card]["avatar"]; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -25,9 +25,10 @@ $card = array_search($view, array_column( $json, 'cid' ) );
     <base target="_blank">
     <meta itemprop="name" content="<?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?>">
     <meta itemprop="description" content="<?php echo $json[$card]["description"]; ?>">
-    <meta itemprop="image" content="<?php echo $json[$card]["cardimg"]; ?>">
+    <meta itemprop="image" content="<?php echo $json[$card]["avatar"]; ?>">
     <meta property="og:title" content="<?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?>">
-    <meta property="og:image" content="<?php echo $json[$card]["cardimg"]; ?>">
+    <meta property="og:description" content="<?php echo $json[$card]["description"]; ?>">
+    <meta property="og:image" content="<?php echo $json[$card]["avatar"]; ?>">
     <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
     <meta property="og:site_name" content="FediCards Directory">
     <meta property="og:locale" content="en_US">
@@ -36,7 +37,8 @@ $card = array_search($view, array_column( $json, 'cid' ) );
     <meta name="twitter:site" content="@abidnev">
     <meta name="twitter:creator" content="@abidnev">
     <meta name="twitter:title" content="<?php if($json[$card]["name"] != "") {echo $json[$card]["name"];} else { echo "FediCard"; } ?>">
-    <meta name="twitter:image" content="<?php echo $json[$card]["cardimg"]; ?>">
+    <meta name="twitter:description" content="<?php echo $json[$card]["description"]; ?>">
+    <meta name="twitter:image" content="<?php echo $json[$card]["avatar"]; ?>">
 </head>
 <body>
     <div class="container shadow pt-3 mb-3" style="max-width:800px;">
