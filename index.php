@@ -75,7 +75,7 @@ require_once('inc/config.php');
                         ?>
                           <div class="col">
                             <div class="card h-100 position-relative shadow">
-                              <img src="<?= $cardimg; ?>" style="width:100%;max-height:150px;object-fit: cover;" class="card-img-top">
+                              <img src="<?= $cardimg; ?>" style="width:100%;height:140px;object-fit: cover;" class="card-img-top">
                               <div class="card-body">
 				<img class="avatar rounded-circle shadow header-left" src="<?= $avatar; ?>">
 				<a href="<?= $instanceurl; ?>" target="_blank">
