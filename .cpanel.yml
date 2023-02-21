@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/gwnlquih/directory/
-    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp -R . $DEPLOYPATH
