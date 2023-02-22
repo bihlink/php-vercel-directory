@@ -60,4 +60,3 @@ require_once('inc/config.php');
 <?php include('inc/footer.php'); ?>
 </body>
 </html>
-<?php //('cache/bottomcache.php'); ?>
