@@ -43,7 +43,7 @@ require_once('inc/config.php');
       <div class="row">
         <div class="col-md-8">
 	<h3>Fediverse Timeline</h3>
-	<?php file_get_contents('https://fedi.bihlink.com/embed/timeline.php?in=masto.ai&t=fed'); ?>
+	<?php echo file_get_contents('https://fedi.bihlink.com/embed/timeline.php?in=masto.ai&t=fed'); ?>
         </div>
         <div class="col-md-4">
             <h3>Trending Hashtags</h3>
