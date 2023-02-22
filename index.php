@@ -54,6 +54,7 @@ require_once('inc/config.php');
 	    $matches = str_replace('/tags/', 'https://fedi.bihlink.com/tags/', $matches);
             echo "<table style='width:100%;'>$matches[0]</table>";
           ?>
+	  <iframe allowfullscreen sandbox="allow-top-navigation allow-scripts" width="100%" height="1000" src="https://nitter.bihlink.com/abidnev"></iframe>
         </div>
       </div>
     </div><!-- container -->
