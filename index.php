@@ -54,8 +54,6 @@ require_once('inc/config.php');
 	    $matches = str_replace('/tags/', 'https://fedi.bihlink.com/tags/', $matches);
             echo "<table style='width:100%;'>$matches[0]</table>";
           ?>
-	    <h3>Microblog.Club</h3>
-	  <?php echo file_get_contents('https://fedi.bihlink.com/embed/timeline.php?in=microblog.club&t=local'); ?>
         </div>
       </div>
     </div><!-- container -->
