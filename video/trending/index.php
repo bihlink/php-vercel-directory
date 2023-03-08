@@ -1,5 +1,5 @@
 <?php 
-require_once('../../inc/config.php'); 
+require_once('../../../../inc/config.php'); 
 $ctry = $_GET["c"];
 $ctryname = $_GET["ct"];
 $ip = $_SERVER['REMOTE_ADDR'];
