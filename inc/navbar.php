@@ -14,10 +14,10 @@
           <a class="nav-link" aria-current="page" href="https://fedi.bihlink.com" target="_blank"><i class="bi bi-link"></i> FediLink</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://bihlink.com" target="_blank"><i class="bi bi-play-btn"></i> BiH Link Videos</a>
+          <a class="nav-link" href="<?= $rooturl; ?>/video/trending" target="_blank"><i class="bi bi-lightning-charge"></i> Trending Videos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://microblog.club" target="_blank"><i class="bi bi-lightning-charge"></i> Microblog.Club</a>
+          <a class="nav-link" href="https://microblog.club" target="_blank"><i class="bi bi-play-btn"></i> Microblog.Club</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
