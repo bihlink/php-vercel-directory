@@ -1,5 +1,5 @@
 <?php 
-require_once('../../inc/config.php'); 
+require_once('../../../inc/config.php'); 
 $ctry = $_GET["c"];
 $ctryname = $_GET["ct"];
 $ip = $_SERVER['REMOTE_ADDR'];
@@ -13,7 +13,7 @@ if($ctry == '') {
 <html lang="en">
 <head>
     <title><?= $seotitle; ?> - Trending Videos<?php echo " In $ctryname"; ?></title>
-    <?php include('../../inc/inhead.php'); ?>
+    <?php include('../../../inc/inhead.php'); ?>
     <meta name="description" content="Watch latest trending videos on <?= $seotitle; ?>" />
 	<meta name="image" content="<?= $rooturl; ?>/video/inc/img/bihlink.jpg">
 	<!-- Schema.org Tags -->
@@ -37,7 +37,7 @@ if($ctry == '') {
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle"></i></button>
-<?php include('../../inc/navbar.php'); ?>
+<?php include('../../../inc/navbar.php'); ?>
     <div class="container">
         <div class="row">
             <div class="col-12"><h1><i class="bi bi-play-btn"></i> <?= $seotitle; ?> - Trending Videos<?php echo " In $ctryname"; ?></h1></div>
@@ -245,6 +245,6 @@ if($ctry == '') {
             </div>
         </div>
     </div><!-- container -->
-<?php include('../../inc/footer.php'); ?>
+<?php include('../../../inc/footer.php'); ?>
 </body>
 </html>
