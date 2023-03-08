@@ -42,7 +42,6 @@ if($ctry == '') {
     <div class="container">
         <div class="row">
             <div class="col-12"><h1><i class="bi bi-play-btn"></i> <?= $seotitle; ?> - Trending Videos<?php echo " In $ctryname"; ?></h1></div>
-            
                 <div class="accordion mt-3" id="accordionPanelsStayOpenExample">
                   <div class="accordion-item">
                     <h3 class="accordion-header" id="panelsStayOpen-headingOne">
